@@ -5,7 +5,7 @@ require './lib/url'
 class URLShortner < Sinatra::Base
   
   get '/' do
-    File.read('index.html')
+    
   end
 
   post '/' do
