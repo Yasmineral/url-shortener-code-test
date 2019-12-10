@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/url'
 
 class URLShortner < Sinatra::Base
   
@@ -8,7 +9,7 @@ class URLShortner < Sinatra::Base
 
 
   post '/' do
-    "Your url is #{params['url']}"
+    "Your long url is #{params['url']} & short url is #{generate_short_url}"
   end
 
 
