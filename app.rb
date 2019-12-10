@@ -6,5 +6,11 @@ class URLShortner < Sinatra::Base
     File.read('index.html')
   end
 
+
+  post '/' do
+    "Your url is #{params['url']}"
+  end
+
+
   run! if app_file == $0
 end
