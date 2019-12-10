@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require './lib/url'
+require './lib/url_generator'
 
 
 class URLShortner < Sinatra::Base
@@ -10,7 +10,7 @@ class URLShortner < Sinatra::Base
 
   post '/' do
     url = JSON.parse(request.body.read)
-    URL.generate_short_url(url['url'])
+    URLGenerator.generate_short_url(url['url'])
   end
 
   get '/:url' do

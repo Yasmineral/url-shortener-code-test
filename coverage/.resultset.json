@@ -1,44 +1,20 @@
 {
   "RSpec": {
     "coverage": {
-<<<<<<< HEAD
-      "/Users/yaskemp/Desktop/MyCode/yaskemp-url-shortener-code-test/spec/features/receiving_short_url_spec.rb": [
+      "/Users/yaskemp/Desktop/MyCode/yaskemp-url-shortener-code-test/spec/url_spec.rb": [
         1,
-        1,
-        1,
-        1,
-        1,
-        0,
         null,
-        null
-      ],
-=======
->>>>>>> parent of 360afe7... receieve hard coded short url test passing
-      "/Users/yaskemp/Desktop/MyCode/yaskemp-url-shortener-code-test/spec/features/submit_long_url_spec.rb": [
         1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/yaskemp/Desktop/MyCode/yaskemp-url-shortener-code-test/spec/features/url_spec.rb": [
         1,
         null,
         1,
         1,
         1,
-        0,
+        1,
         null,
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1575976952
-=======
-    "timestamp": 1575973618
->>>>>>> parent of 360afe7... receieve hard coded short url test passing
+    "timestamp": 1575991109
   }
 }
