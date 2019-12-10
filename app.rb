@@ -1,6 +1,5 @@
 require 'sinatra/base'
 require './lib/url'
-require 'base64'
 
 
 class URLShortner < Sinatra::Base
@@ -9,9 +8,9 @@ class URLShortner < Sinatra::Base
     File.read('index.html')
   end
 
-
   post '/' do
-    URL.generate_short_url(params[:url])
+    url = JSON.parse(request.body.read)
+    URL.generate_short_url(url['url'])
   end
 
   get '/:url' do
