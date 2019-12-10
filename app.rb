@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require './lib/url'
 
+
 class URLShortner < Sinatra::Base
   
   get '/' do
@@ -9,7 +10,7 @@ class URLShortner < Sinatra::Base
 
 
   post '/' do
-    "Your long url is #{params['url']} & short url is #{generate_short_url}"
+    "Your long url is #{URL.convert_to_json(params['url'])}"
   end
 
 
