@@ -1,4 +1,8 @@
-# Url Shortener Code Test
+# URL shortner test
+
+## Specification
+
+### Requirements
 
 Without using an external database, we'd like you to create a URL shortening
 service. The URLs do not need to persist between restarts, but should be
@@ -27,39 +31,60 @@ curl -v localhost:4000/abc123
 { "url": "http://www.farmdrop.com" }
 ```
 
-Use whatever languages and frameworks you are comfortable with. Don't worry
-about getting the whole thing working flawlessly, this is more to see how you
-structure a program. Please don't spend more than a few hours on it.
+# Installation
 
-Bonus points:
+download the repo into your Projects folder using:
 
-- I often forget to type "http://" at the start of a URL. It would be nice if
-  this was handled by the application (frontend or backend is up to you).
-- We like to see how you approach the problem, so a few git commits with a
-  clear message about what you're doing are better than one git commit with
-  everything in it.
-- We like tests. We don't expect a full test suite, but some tests would be
-  nice to see. Its up to you whether thats integration, unit or some other
-  level of testing.
-- We'd be very happy to see a Dockerfile to run the project. This by no means a
-  requirement, so don't go reading the Docker docs if you've never worked with
-  it.
-- If you'd like to show off your frontend skills, you could create a simple
-  frontend that can create and display shortened URLs without reloading the
-  page.
+```
+git clone https://github.com/Yasmineral/url-shortener-code-test.git
+```
 
-## Submission
+change into the directory, then run:
 
-Please clone this repository, write some code and update this README with a
-guide of how to run it.
+```
+bundle install
+```
 
-Either send us a link to the repository on somewhere like github or bitbucket
-(bitbucket has free private repositories) or send us a git bundle.
+to install dependencies.
 
-    git bundle create yournamehere-url-shortener-test.bundle master
 
-And send us the resulting `yournamehere-url-shortener-test.bundle` file.
+To run the server, type the following into your command line:
+```
+ruby app.rb
+```
 
-This `.bundle` file can be cloned using:
+Use browser to visit the application at http://localhost:4567.
 
-    git bundle clone bundle-filename.bundle -b master directory-name
+# User stories
+
+**Submit URLs**
+
+As a user,
+
+So that my URLs are more manageable,
+
+I'd like to submit a long URL & have returned a working shortened version.
+
+**Use URLs**
+
+```
+As a user,
+So that my URLs are more manageable,
+I'd like to submit a long URL & have returned a working shortened version.
+```
+
+```
+As a user,
+So that I can keep track of all my shortened urls,
+I'd like to see them displayed on a page.
+```
+
+```
+As a user,
+So that I can save time,
+I'd like http added to the start of the URL if I forget to enter it in.
+```
+
+# Process
+Originally, I wanted to implement a Javascript and JQuery solution as the requirements asked for JSON body & response handling. I was also excited to build a front end that did not require page refreshing (always a more enjoyable user experience!), but in the end, opted for a simple Ruby solution to better utilize the time available.
+I concentrated on the backend functionality and tried a few different ways to get the desired results. There are some methods I would love to clean up - for example, my save_urls method is repeating functionality as I had some issues retrieving the urls from the hash unless I stored them one by one, so I know there's certainly a cleaner way of doing this! Unfortunately, I’ve also not yet managed to get the redirects to work so would love to tackle this again in the future, as well as make the program more robust with extra tests.
