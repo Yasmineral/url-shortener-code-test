@@ -1,7 +1,17 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/yaskemp/Desktop/MyCode/yaskemp-url-shortener-code-test/spec/url_spec.rb": [
+      "/Users/yaskemp/Desktop/MyCode/url-shortener-code-test/spec/url_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
         1,
         null,
         1,
@@ -11,10 +21,21 @@
         1,
         1,
         1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1575991258
+    "timestamp": 1576670213
   }
 }
